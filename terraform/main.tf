@@ -6,7 +6,9 @@ terraform {
       }
     }
     backend "s3"{
+        bucket = "devopsbucketname"
         key = "aws/ec2-deploy/terraform.tfstate"
+        region = "eu-central-1"
     }
     
 }
